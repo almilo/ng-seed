@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ng-seed project",
   "scripts": {
-    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server --port 8000 & open http://localhost:8000/webpack-dev-server/app"
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server --port 8000 --open"
   },
   "author": "Alberto Mijares <almilo@almilo.es>",
   "license": "MIT",
