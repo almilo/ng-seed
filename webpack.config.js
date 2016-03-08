@@ -11,6 +11,12 @@ module.exports = {
         filename: 'app.js'
     },
     module: {
+        preLoaders: [
+            {
+                test: /\.js$/,
+                loader: 'source-map-loader'
+            }
+        ],
         loaders: [
             {
                 test: /\.js$/,
@@ -33,7 +39,8 @@ module.exports = {
             template: app('index.html'),
             inject: 'body'
         })
-    ]
+    ],
+    devtool: 'source-map'
 };
 
 function app(fileName) {
